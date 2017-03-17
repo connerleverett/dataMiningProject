@@ -2,9 +2,10 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>USAWest.kml</name>
-	<Style id="s_ylw-pushpin_hl">
+	<open>1</open>
+	<Style id="s_ylw-pushpin">
 		<IconStyle>
-			<scale>1.3</scale>
+			<scale>1.1</scale>
 			<Icon>
 				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
 			</Icon>
@@ -28,9 +29,9 @@
 			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="s_ylw-pushpin">
+	<Style id="s_ylw-pushpin_hl">
 		<IconStyle>
-			<scale>1.1</scale>
+			<scale>1.3</scale>
 			<Icon>
 				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
 			</Icon>
@@ -52,7 +53,7 @@
 			<outerBoundaryIs>
 				<LinearRing>
 					<coordinates>
-						-124.0643428432363,21.62428133333164,0 -96.00772959513533,23.79947308047025,0 -96.80590076399045,53.98040411022095,0 -134.3258179227266,47.91450808788012,0 -124.0643428432363,21.62428133333164,0 
+						-124.0643428432363,21.62428133333164,0 -96.44503206288896,24.31766916728348,0 -77.02224387830327,51.3094186167079,0 -134.3258179227266,47.91450808788012,0 -124.0643428432363,21.62428133333164,0 
 					</coordinates>
 				</LinearRing>
 			</outerBoundaryIs>

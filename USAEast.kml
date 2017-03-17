@@ -2,6 +2,17 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>USAEast.kml</name>
+	<open>1</open>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="s_ylw-pushpin_hl">
 		<IconStyle>
 			<scale>1.3</scale>
@@ -18,16 +29,6 @@
 			<fill>0</fill>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="m_ylw-pushpin">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
-		</Pair>
-	</StyleMap>
 	<Style id="s_ylw-pushpin">
 		<IconStyle>
 			<scale>1.1</scale>
@@ -52,7 +53,7 @@
 			<outerBoundaryIs>
 				<LinearRing>
 					<coordinates>
-						-96.07939121667101,23.89136242112505,0 -74.93897302251803,22.47292878157281,0 -63.39544943013702,48.4429493189926,0 -96.80590076399045,53.98040411022095,0 -96.07939121667101,23.89136242112505,0 
+						-96.44927555595737,24.36753988561635,0 -74.93897302251803,22.47292878157281,0 -63.39544943013702,48.4429493189926,0 -77.01956601022354,51.31583921514461,0 -96.44927555595737,24.36753988561635,0 
 					</coordinates>
 				</LinearRing>
 			</outerBoundaryIs>

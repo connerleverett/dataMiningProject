@@ -2,7 +2,8 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>USANorth.kml</name>
-	<Style id="s_ylw-pushpin5">
+	<open>1</open>
+	<Style id="s_ylw-pushpin">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -18,17 +19,17 @@
 			<fill>0</fill>
 		</PolyStyle>
 	</Style>
-	<StyleMap id="m_ylw-pushpin4">
+	<StyleMap id="m_ylw-pushpin">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin5</styleUrl>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl03</styleUrl>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="s_ylw-pushpin_hl03">
+	<Style id="s_ylw-pushpin_hl">
 		<IconStyle>
 			<scale>1.3</scale>
 			<Icon>
@@ -46,13 +47,13 @@
 	</Style>
 	<Placemark>
 		<name>USANorth</name>
-		<styleUrl>#m_ylw-pushpin4</styleUrl>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
 		<Polygon>
 			<tessellate>1</tessellate>
 			<outerBoundaryIs>
 				<LinearRing>
 					<coordinates>
-						-125.6449664938869,38.66197668627194,0 -71.58090383156198,35.47229043853898,0 -64.79151011618875,46.75938227160562,0 -129.0750507542309,49.55071476740098,0 -125.6449664938869,38.66197668627194,0 
+						-125.7716068286622,40.62140931635845,0 -69.9746867425751,36.56185775334602,0 -64.79151011618875,46.75938227160561,0 -129.0750507542309,49.55071476740098,0 -125.7716068286622,40.62140931635845,0 
 					</coordinates>
 				</LinearRing>
 			</outerBoundaryIs>
