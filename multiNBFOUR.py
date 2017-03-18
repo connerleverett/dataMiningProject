@@ -2,6 +2,7 @@ import math
 import re
 
 #TODO: Make re to strip tweet of all it's punctuation and links
+# DONE
 
 #------For use in finding condition probability------
 #Counts number of times a word shows up in the text label list e.g. text0
@@ -52,29 +53,42 @@ for x in D:
 			numTermsInV += 1
 		V.append(wordsInTweet[y])
 
+print V
 #------Count the number of docs--------
 # TODO: add two more counters (N2, N3)
+# DONE
 N = len(D)
 N0 = 0
 N1 = 0
+N2 = 0
+N3 = 0
 
 # TODO: add two more checks for N2 and N3
+# DONE
 # This is counting the number of labels
 for x in range(0, len(C)):
 	if C[x] == '0':
 		N0 += 1
-	else:
+	if C[x] == '1':
 		N1 += 1
+	if C[x] == '2':
+		N2 += 1
+	if C[x] == '3':
+		N3 += 1
 
 
 #------Tokenizer------
 # TODO: add two more lists for text of type labels 2 and 3
+# DONE
 text0 = []
 text1 = []
+text2 = []
+text3 = []
 counter = 0
 
 # breaks down tweet into words and places those words in appropriate list
 # TODO: append into extra lists for extra labels
+#DONE
 for x in D:
 	wordsInTweet = re.sub("[^\w']", " ",  x).split()
 	if C[counter] == '0':
@@ -83,21 +97,32 @@ for x in D:
 	if C[counter] == '1':
 		for y in range(0, len(wordsInTweet)):
 			text1.append(wordsInTweet[y])
+	if C[counter] == '2':
+		for y in range(0, len(wordsInTweet)):
+			text2.append(wordsInTweet[y])
+	if C[counter] == '3':
+		for y in range(0, len(wordsInTweet)):
+			text3.append(wordsInTweet[y])
 	counter += 1
 
 # prior is a 2 item list that contains the condProb in each position for each label
 prior = []
 #this will need to be a list of 4 lists
-condProb = [[],[]]
+condProb = [[],[], [], []]
 
 #------Find condition probability------
 # TODO: loop through 4 times instead of 2 (for each type of label)
+# DONE
 
-for c in range(0, 2):
+for c in range(0, 4):
 	if c == 0:
 		prior.insert(c, float(N0)/float(N))
 	if c == 1:
 		prior.insert(c, float(N1)/float(N))
+	if c == 2:
+		prior.insert(c, float(N2)/float(N))
+	if c == 3:
+		prior.insert(c, float(N3)/float(N))
 	for t in range(0, len(V)):
 		if c == 0:
 			TCT = countTokensOfTerm(text0, V[t])
@@ -107,7 +132,15 @@ for c in range(0, 2):
 			TCT = countTokensOfTerm(text1, V[t])
 			prob = (float(TCT + 1)/(len(text1) + numTermsInV))
 			condProb[1].insert(t, prob)
-	
+		if c == 2:
+			TCT = countTokensOfTerm(text2, V[t])
+			prob = (float(TCT + 1)/(len(text2) + numTermsInV))
+			condProb[2].insert(t, prob)
+		if c == 3:
+			TCT = countTokensOfTerm(text3, V[t])
+			prob = (float(TCT + 1)/(len(text3) + numTermsInV))
+			condProb[3].insert(t, prob)
+
 #--------------------------------------------------------------------------------------------------------------------------------------------
 #
 #------Apply Multinomial NB------------------------------------------------------------------------------------------------------------------
@@ -154,7 +187,8 @@ for i in range(0, len(D)):
 	#------For loop to compute conditional probability------
 	score = []
 	#TODO: add two more
-	for c in range(0, 2):
+	# DONE
+	for c in range(0, 4):
 		score.append(math.log(prior[c]))
 		if c == 0:
 			for t in W:
@@ -164,18 +198,38 @@ for i in range(0, len(D)):
 			for t in W:
 				index = findIndexOfCondProb(t)
 				score[c] += math.log(condProb[c][index])
+		if c == 2:
+			for t in W:
+				index = findIndexOfCondProb(t)
+				score[c] += math.log(condProb[c][index])
+		if c == 3:
+			for t in W:
+				index = findIndexOfCondProb(t)
+				score[c] += math.log(condProb[c][index])
 	
 	#------Test to check accuracy (Should be > 90%)------
 	#TODO: check for 4 labels
-	if score[0] > score[1]:
+	# DONE
+	print score
+	if score[0] > score[1] and score[0] > score[2] and score[0] > score[3]:
 		if C[i] == '0':
 			right += 1
 		else:
 			wrong += 1
-	else:
+	if score[1] > score[0] and score[1] > score[2] and score[1] > score[3]:
 		if C[i] == '1':
 			right += 1
 		else:
 			wrong += 1
-
+	if score[2] > score[0] and score[2] > score[1] and score[2] > score[3]:
+		if C[i] == '2':
+			right += 1
+		else:
+			wrong += 1
+	if score[3] > score[0] and score[3] > score[1] and score[3] > score[2]:
+		if C[i] == '3':
+			right += 1
+		else:
+			wrong += 1
+print
 print('Accuracy: ' + str((float(right)/(right+wrong))*100) + '%')
