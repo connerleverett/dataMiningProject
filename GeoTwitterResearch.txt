@@ -1,0 +1,4 @@
+https://nlp.stanford.edu/IR-book/pdf/13bayes.pdf
+https://noisy-text.github.io/2016/pdf/WNUT30.pdf
+http://www.aclweb.org/anthology/C12-1064
+http://people.eng.unimelb.edu.au/paulcook/live-4200-7781-jair.pdf
