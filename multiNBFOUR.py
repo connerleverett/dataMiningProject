@@ -1,5 +1,6 @@
 import math
 import re
+import time
 
 #TODO: Make re to strip tweet of all it's punctuation and links
 # DONE
@@ -25,11 +26,12 @@ def findIndexOfCondProb(t):
 #
 #------Train Multinomial NB-----------------------------------------------------------------------------------------------
 #
+startTime = time.time()
 
 #------Extracting from classes and docs from files------
 
 file = open('trainlabels.txt', 'rt')
-file2 = open('traindata.txt', 'rt')
+file2 = open('cleanedTrainDataNoStopWords.txt', 'rt')
 
 C = []
 D = []
@@ -40,6 +42,8 @@ for x in file:
 for x in file2:
 	D.append(x.strip())
 
+print "Appended files to list"
+	
 #------Extract vocabulary from D------
 # splits each tweet into its component words
 # V is a list with all the words used in the tweets including repitions
@@ -53,7 +57,8 @@ for x in D:
 			numTermsInV += 1
 		V.append(wordsInTweet[y])
 
-print V
+print "Extracted vocabulary from D"
+		
 #------Count the number of docs--------
 # TODO: add two more counters (N2, N3)
 # DONE
@@ -76,6 +81,12 @@ for x in range(0, len(C)):
 	if C[x] == '3':
 		N3 += 1
 
+print "counted number of docs"
+print "Number of tweets: " + str(N)
+print "Number of tweets of type 0: " + str(N0)
+print "Number of tweets of type 1: " + str(N1)
+print "Number of tweets of type 2: " + str(N2)
+print "Number of tweets of type 3: " + str(N3)
 
 #------Tokenizer------
 # TODO: add two more lists for text of type labels 2 and 3
@@ -105,6 +116,8 @@ for x in D:
 			text3.append(wordsInTweet[y])
 	counter += 1
 
+print "Tokenized tweets"
+	
 # prior is a 2 item list that contains the condProb in each position for each label
 prior = []
 #this will need to be a list of 4 lists
@@ -141,20 +154,18 @@ for c in range(0, 4):
 			prob = (float(TCT + 1)/(len(text3) + numTermsInV))
 			condProb[3].insert(t, prob)
 
+print "Found conditional probability"
 #--------------------------------------------------------------------------------------------------------------------------------------------
 #
 #------Apply Multinomial NB------------------------------------------------------------------------------------------------------------------
 #
-
+print "Applying multinomial NB"
 '''
 !NOTE!
 IF YOU WANT TO CHANGE THE INPUT FILE THIS IS THE PLACE TO DO IT
-SIMPLY SWITCH 'TRAIN...' WITH 'TEST...'
 '''
 file = open('trainlabels.txt', 'rt')
-file2 = open('traindata.txt', 'rt')
-#file = open('testlabels.txt', 'rt')
-#file2 = open('testdata.txt', 'rt')
+file2 = open('cleanedTrainDataNoStopWords.txt', 'rt')
 
 C = []
 D = []
@@ -164,6 +175,7 @@ for x in file:
 for x in file2:
 	D.append(x.strip())
 
+print "Files opened and appended to lists C and D"
 #------Extract vocabulary from D------
 
 # for accuracy 
@@ -171,7 +183,7 @@ right = 0
 wrong = 0
 
 #------Iterate through all docs------
-
+print "Iterating through all of the docs"
 #------Extract tokens from doc------
 #------This for loop only extracts the words from the doc that are also in the Vocabulary------
 # runs for every single tweet
@@ -210,7 +222,6 @@ for i in range(0, len(D)):
 	#------Test to check accuracy (Should be > 90%)------
 	#TODO: check for 4 labels
 	# DONE
-	print score
 	if score[0] > score[1] and score[0] > score[2] and score[0] > score[3]:
 		if C[i] == '0':
 			right += 1
@@ -231,5 +242,6 @@ for i in range(0, len(D)):
 			right += 1
 		else:
 			wrong += 1
-print
+
 print('Accuracy: ' + str((float(right)/(right+wrong))*100) + '%')
+print "Took", time.time() - startTime, "s to run"
