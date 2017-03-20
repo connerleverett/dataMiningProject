@@ -1,4 +1,5 @@
-#Conner Leverett 
+#Conner Leverett && Jasen Wright
+#SENG 474 Data Mining
 
 # Import the necessary package to process data in JSON format
 try:
@@ -8,9 +9,17 @@ except ImportError:
 
 # Import the necessary methods from "twitter" library
 from twitter import Twitter, OAuth, TwitterHTTPError, TwitterStream
-import time
-import datetime 
+import time 
+import psycopg2
 
+#Connect to database
+try:
+	connection = psycopg2.connect("dbname='DATABASE_NAME' user='USER_NAME' host='HOST' password='PASSWORD'")
+	print "Opened connection"
+except:
+	print "Unable to connect to the database"
+	
+curr = connection.cursor()
 
 ####This code was found here: http://geospatialpython.com/2011/01/point-in-polygon.html and was not written by Conner Leverett
 def point_in_poly(x,y,poly):
@@ -48,10 +57,10 @@ outlineOfStates=[[-123.2899461863574,35.67137503893398],[ -119.8174278565946,33.
 [-123.2899461863574,35.67137503893398]]
 
 #The code used to access Twitter is taken from here: http://socialmedia-class.org/twittertutorial.html
-consumer_key = 'pQCn49jJCMVk5v70zeamnGwei'
-consumer_secret = 'fsGrkU11AFaxv4EGzPBK443tfrRDnij8gMAx1B6CtUxRz3FyMi'
-access_token = '1159021298-O9XRY4CoGLfDeDpUveqaI2EAUIlMyc5yGKn66Nc'
-access_secret = 'zqfwxqxRYi0ppwA1eIDZgLGUuAVnQWN1J2xTqvxOaEdMZ'
+consumer_key = 'CONSUMER KEY'
+consumer_secret = 'CONSUMER SECRET'
+access_token = 'ACCESS TOKEN'
+access_secret = 'ACCESS SECRET'
 
 oauth = OAuth(access_token, access_secret, consumer_key, consumer_secret)
 
@@ -61,106 +70,70 @@ twitter_stream = TwitterStream(auth=oauth)
 # Get a sample of the public data following through Twitter
 iterator = twitter_stream.statuses.sample()
 
-datetimeNow = datetime.datetime.now()
-
-#This is just formatting
-hour = "%02d" % (datetimeNow.hour,)
-minutes = "%02d" % (datetimeNow.minute,)
-
-dateForFileName = str(datetimeNow.year)+'-'+str(datetimeNow.month)+'-'+str(datetimeNow.day)+ ' ' + hour + minutes
-
-fileToWriteTo = open('output '+dateForFileName+'.txt', 'w')
-
-fileToWriteTo.write('TweetID,TweetText,Hashtags,Latitude,Longitude\n')
-
-
-tweetidList = []
-
-
-for z in range(5):
+#Collect Tweets
+for z in range(3000):
 	print z
 	tweet_count = 0
 	for tweet in iterator:
 		tweet_count = tweet_count+ 1	
 		try:
+			#Check to make sure there is something in the geo field of the tweet
 			if tweet['geo']!=None:
+				#Check to see if tweet is in the united states
 				if (point_in_poly(tweet['geo']['coordinates'][1],tweet['geo']['coordinates'][0], outlineOfStates)):
 					print "Found Tweet"
 					hashtags = [] 
 					milliseconds =int(tweet['timestamp_ms'])
 					date = time.gmtime(milliseconds/1000.)
-					
+					#Get Date
 					try:
-						#print "The date is: " + str(date[0]), str(date[1]), str(date[2])
 						date = str(date[0])+"/"+str(date[1])+"/"+str(date[2])
-						
 					except: 
-						date='No date'
+						continue
+					#Get tweet ID
 					try:
-						#print "The id is: " + str(tweet['id'])
 						tweetid = str(tweet['id'])
-						#Make sure no tweet is added twice
-						if tweetid in tweetidList:
-							continue
-						else:
-							tweetidList.append(tweetid)
-					except:
-						print "hit except case"
-						tweetid='No Tweet ID'		
+					except: 
+						continue		
+					#Get hashtags
 					try:
 						if len(tweet['entities']['hashtags'])!=0:
 							num = len(tweet['entities']['hashtags'])
-							#print "The hashtags are: "
 							string=""
 							for x in range(num):
-								#print tweet['entities']['hashtags'][x]['text'].encode('utf-8')
 								string=string+tweet['entities']['hashtags'][x]['text'].encode('utf-8')+","
-							stringOfHashtags=string
-						
+							hashtags=string	
 					except Exception,e:
 						print e
-						stringOfHashtags = 'No hashtags'			
+						continue			
+					#Get Latitude
 					try:
-						#print "The latitude is: " +str(tweet['geo']['coordinates'][0])
 						latitude = str(tweet['geo']['coordinates'][0])
-						
 					except:
-						latitude = "No Latitude"
-					
+						continue
+					#Get longitude
 					try:
-						#print "The longitude is: " +str(tweet['geo']['coordinates'][1])
 						longitude = str(tweet['geo']['coordinates'][1])
-						
 					except:	
-						longitude = 'No Longitude'
-					
+						continue
+					#Get tweet text
 					try:	
-						#print "The text is: " + tweet['text'].encode('utf-8')
 						tweettext = tweet['text'].encode('utf-8')
-
 					except Exception,e:
-						tweettext = 'No text'
-					 
-					#remove commas form text so can format easily in Excel
+						continue
+						
+					#Insert into the DB
 					try:
-						noCommasInText = tweettext.replace(',',' ')
-					except:
-						noCommasInText='No text'
-					
-					try:
-						noCommasInHashtags = hashtags.replace(',',' ')
-					except:
-						noCommasInHashtags='No hashtags'
-					
-		
-					fileToWriteTo.write(tweetid+','+noCommasInText+','+noCommasInHashtags+','+latitude+','+longitude+'\n')
-							
+						curr.execute("INSERT INTO TABLENAME (datefield,uniqueid,hashtags,latitude, longitude,tweettext, tweetuniqueid) VALUES (%s,%s,%s,%s,%s,%s,%s)",
+						(date,tweet_count,hashtags,latitude,longitude,tweettext,tweetid))
+					except Exception, e:
+						continue
 		except: 
 			continue
 		if tweet_count >= 1000:
 			break
-fileToWriteTo.close()	
-
-
-
-	
+		
+	#This is needed to actually store the data in the DB
+	connection.commit()
+curr.close()
+connection.close()

@@ -1,0 +1,9 @@
+['alabama','montgomery','arizona','phoenix','arkansas','california','sacramento','colorado','denver','connecticut',
+'hartford','delaware','dover','florida','tallahassee','georgia','atlanta','idaho','boise','illinois','springfield',
+'indiana','indianapolis','iowa','moines','kansas','topeka','kentucky','frankfort','louisiana','baton ','rouge','maine',
+'augusta','maryland','annapolis','massachusetts','boston','michigan','lansing','minnesota','saint','paul','mississippi',
+'jackson','missouri','jefferson','montana','helena','nebraska','lincoln','nevada','carson','hampshire','concord','jersey',
+'trenton','new mexico','santa','new york','albany','raleigh','dakota','bismarck','ohio','columbus','oklahoma','oregon','salem',
+'pennsylvania','harrisburg','rhode','providence','carolina','columbia','dakota','pierre','tennessee','nashville','texas',
+'austin','utah','vermont','montpelier','virginia','richmond','washington','olympia','virginia','charleston','wisconsin','madison',
+'wyoming','cheyenne']
