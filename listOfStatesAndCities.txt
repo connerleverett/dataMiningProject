@@ -24,68 +24,63 @@ Missouri
 Montana
 Nebraska
 Nevada
-New Hampshire
-New Jersey
-New Mexico
-New York
-North Carolina
-North Dakota
+Hampshire
+Jersey
+Mexico
+York
+Carolina
+Dakota
 Ohio
 Oklahoma
 Oregon
 Pennsylvania
-Rhode Island
-South Carolina
-South Dakota
+Rhode
+South
+South
 Tennessee
 Texas
 Utah
 Vermont
 Virginia
 Washington
-West Virginia
+Virginia
 Wisconsin
 Wyoming
-Los Angeles
+Angeles
 Chicago
 Houston
 Philadelphia
 Pheonix
-San Antonio
-San Diego
+Antonio
+Diego
 Dallas
-San Jose
+Jose
 Austin
 Jacksonville
-San Francisco
+Francisco
 Indianapolis
 Columbus
-Fort Worth
+Fort
 Charlotte
 Detroit
-El Paso
+Paso
 Seattle
 Denver
 Memphis
 Boston
 Nashville
 Baltimore
-Oklahoma City
 Portland
-Las Vegas
+Vegas
 Louisville
 Milwaukee
 Albuquerque
 Tucson
 Fresno
 Sacramento
-Long Beach
-Kansas City
 Mesa
 Atlanta
-Virginia Beach
 Omaha
-Colorado Springs
 Raleigh
 Miami
 Oakland
@@ -93,7 +88,7 @@ Minneapolis
 Tulsa
 Cleveland
 Wichita
-New Orleans
+Orleans
 Arlington
 AL
 AR
