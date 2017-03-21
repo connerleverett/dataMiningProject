@@ -3,33 +3,7 @@
 <Document>
 	<name>USAEast.kml</name>
 	<open>1</open>
-	<StyleMap id="m_ylw-pushpin">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="s_ylw-pushpin_hl">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
-			</Icon>
-			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LineStyle>
-			<color>ff0000ff</color>
-			<width>3</width>
-		</LineStyle>
-		<PolyStyle>
-			<fill>0</fill>
-		</PolyStyle>
-	</Style>
-	<Style id="s_ylw-pushpin">
+	<Style id="s_ylw-pushpin30">
 		<IconStyle>
 			<scale>1.1</scale>
 			<Icon>
@@ -45,15 +19,41 @@
 			<fill>0</fill>
 		</PolyStyle>
 	</Style>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin30</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl3">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
 	<Placemark>
 		<name>USAEast</name>
-		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<styleUrl>#m_ylw-pushpin0</styleUrl>
 		<Polygon>
 			<tessellate>1</tessellate>
 			<outerBoundaryIs>
 				<LinearRing>
 					<coordinates>
-						-96.44927555595737,24.36753988561635,0 -74.93897302251803,22.47292878157281,0 -63.39544943013702,48.4429493189926,0 -77.01956601022354,51.31583921514461,0 -96.44927555595737,24.36753988561635,0 
+						-107.7092208836504,25.85166777848984,0 -74.93897302251803,22.47292878157281,0 -63.39544943013702,48.4429493189926,0 -68.44340273042329,49.77223790149817,0 -107.7092208836504,25.85166777848984,0 
 					</coordinates>
 				</LinearRing>
 			</outerBoundaryIs>

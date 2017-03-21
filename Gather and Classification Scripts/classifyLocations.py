@@ -7,11 +7,11 @@ import sys
 
 
 #Excel sheet which is being read
-book = xlrd.open_workbook(r'C:\seng474\dataMiningProject\allTweets.xlsx')
+book = xlrd.open_workbook(r'C:\Conner\SENG474\dataMiningProject\allTweetsFINAL.xlsx')
 first_sheet=book.sheet_by_index(0)
 
 #Excel Sheet which is being written to
-workbook = xlsxwriter.Workbook('classifiedTweets.xlsx')
+workbook = xlsxwriter.Workbook('classifiedTweetsFINAL.xlsx')
 
 #Adding a worksheet to the workbook
 worksheet=workbook.add_worksheet()
@@ -28,9 +28,11 @@ worksheet.write(0,4,'4 Classification',bold)
 worksheet.write(0,5,'NS Classification',bold)
 worksheet.write(0,6,'WE Classification',bold)
 
-west = [[-124.0643428432363,21.62428133333164],[-96.44503206288896,24.31766916728348],[-77.02224387830327,51.3094186167079],[-134.3258179227266,47.91450808788012],[-124.0643428432363,21.62428133333164]] 
+west = [[-124.0643428432363,21.62428133333164],[-106.3062127086709,27.29660338574747],[-68.51632046990315,49.72468265550663],[-134.3258179227266,47.91450808788012],[-124.0643428432363,21.62428133333164]] 
+
  
-east = [[-96.44927555595737,24.36753988561635],[-74.93897302251803,22.47292878157281],[-63.39544943013702,48.4429493189926],[-77.01956601022354,51.31583921514461],[-96.44927555595737,24.36753988561635]] 
+east =[[-107.7092208836504,25.85166777848984],[-74.93897302251803,22.47292878157281],[-63.39544943013702,48.4429493189926],[-68.44340273042329,49.77223790149817],[-107.7092208836504,25.85166777848984]] 
+
  
 
 
@@ -71,6 +73,8 @@ n = 0
 s = 0
 w = 0
 e = 0
+
+print first_sheet.nrows
 	
 for row in range(1, first_sheet.nrows):	
 	latitude = first_sheet.cell(row,1).value
