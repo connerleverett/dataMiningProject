@@ -208,6 +208,7 @@ for k in range(0, 10):
 	# V is a list with all the words used in the tweets including repititions
 	V = []
 	vDict = {}
+	lengthV = 0
 
 	text0 = {}
 	lengthText0 = 0
@@ -218,6 +219,7 @@ for k in range(0, 10):
 	text3 = {}
 	lengthText3 = 0
 	counter = 0
+	index = 0
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	# N is the number of traingingTweets and N# is the number of trainingTweets of that label type
 	N = len(trainingTweets)
@@ -239,15 +241,11 @@ for k in range(0, 10):
 			N3 += 1
 		wordsInTweet = x.split()
 		for y in range(0, len(wordsInTweet)):
-			'''
 			if wordsInTweet[y] not in V:
 				numTermsInV += 1
 			V.append(wordsInTweet[y])
-			'''
-			try:
-				vDict[wordsInTweet[y]] = vDict[wordsInTweet[y]] + 1
-			except:
-				vDict[wordsInTweet[y]] = 1
+			vDict[wordsInTweet[y]] = index
+				
 			if trainingLabels[counter] == '0':
 				lengthText0 += 1
 				#if wordsInTweet[y] in text0:
@@ -273,6 +271,7 @@ for k in range(0, 10):
 					text3[wordsInTweet[y]] = text3[wordsInTweet[y]]+1
 				except:
 					text3[wordsInTweet[y]]=1
+			index += 1
 		counter += 1
 
 	print "Extracted vocabulary from trainingTweets and placed into appropriate lists"
@@ -302,38 +301,29 @@ for k in range(0, 10):
 			TCT = text0[V[t]]
 		except:
 			TCT = 0
-		#print TCT
 		prob = (float(TCT + 1)/(lengthText0 + numTermsInV))
 		condProb[0].insert(t, prob)
-		
 		
 		try:
 			TCT = text1[V[t]]
 		except:
 			TCT = 0
-		#print TCT	
 		prob = (float(TCT + 1)/(lengthText1 + numTermsInV))
 		condProb[1].insert(t, prob)
-		
 		
 		try:
 			TCT = text2[V[t]]
 		except:
-			TCT = 0
-		#print TCT	
+			TCT = 0	
 		prob = (float(TCT + 1)/(lengthText2 + numTermsInV))
 		condProb[2].insert(t, prob)
-		
 		
 		try:
 			TCT = text3[V[t]]
 		except:
 			TCT = 0
-		#print TCT	
 		prob = (float(TCT + 1)/(lengthText3 + numTermsInV))
 		condProb[3].insert(t, prob)
-	
-	
 	
 	print "Found conditional probability"
 	print "Took", str(time.time() - preTime) +  "s to run"
@@ -359,14 +349,33 @@ for k in range(0, 10):
 	for x in testingTweets:
 		# Breaks tweet up into component words
 		wordsInTweet = x.split()
-		W = []
+		W = {}
 		# Check if word is in V
 		for y in range(0, len(wordsInTweet)):
+			try:
+				W[y] = vDict[wordsInTweet[y]]
+			except:
+				continue
+			'''
 			if wordsInTweet[y] in V:
 				W.insert(y, wordsInTweet[y])
+			'''
 		
 		#------For loop to compute conditional probability------
 		score = []
+		
+		score.append(math.log(prior[0]))
+		score.append(math.log(prior[1]))
+		score.append(math.log(prior[2]))
+		score.append(math.log(prior[3]))
+		for t in W:
+			score[0] += math.log(condProb[0][W[t]])
+			score[1] += math.log(condProb[1][W[t]])
+			score[2] += math.log(condProb[2][W[t]])
+			score[3] += math.log(condProb[3][W[t]])
+			
+			
+		'''
 		for c in range(0, 4):
 			score.append(math.log(prior[c]))
 			if c == 0:
@@ -385,7 +394,7 @@ for k in range(0, 10):
 				for t in W:
 					index = findIndexOfCondProb(t)
 					score[c] += math.log(condProb[c][index])
-		
+		'''
 		#------Test to check accuracy------
 		if score[0] > score[1] and score[0] > score[2] and score[0] > score[3]:
 			if testingLabels[counter] == '0':
