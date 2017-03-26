@@ -22,28 +22,9 @@
 		
 		loop through data, compile 4 seperate lists where each list item is another list item containing the tweets you're going to 
 '''
-
 import math
 import re
 import time
-
-#------For use in finding condition probability------
-# Counts number of times a word shows up in the text label list e.g. text0
-def countTokensOfTerm(textc, t):
-	TCT = 0
-	for x in textc:
-		if t == x:
-			TCT += 1
-	return TCT
-	
-#------For use in finding index in condProb list------
-def findIndexOfCondProb(t):
-	index = 0
-	for x in range(0, len(V)):
-		if V[x] == t:
-			index = x
-			break
-	return index
 	
 #
 #------Train Multinomial NB-----------------------------------------------------------------------------------------------
@@ -206,8 +187,9 @@ for k in range(0, 10):
 	# splits each tweet into its component words
 
 	# V is a list with all the words used in the tweets including repititions
-	V = []
+	V = {}
 	vDict = {}
+	countV = {}
 	lengthV = 0
 
 	text0 = {}
@@ -241,11 +223,15 @@ for k in range(0, 10):
 			N3 += 1
 		wordsInTweet = x.split()
 		for y in range(0, len(wordsInTweet)):
-			if wordsInTweet[y] not in V:
+			try:
+				countV[wordsInTweet[y]] = countV[wordsInTweet[y]] + 1
+			except:
+				countV[wordsInTweet[y]] = 1
 				numTermsInV += 1
-			V.append(wordsInTweet[y])
+			#V.append(wordsInTweet[y])
+			lengthV += 1
+			V[index] = wordsInTweet[y]
 			vDict[wordsInTweet[y]] = index
-				
 			if trainingLabels[counter] == '0':
 				lengthText0 += 1
 				#if wordsInTweet[y] in text0:
@@ -275,6 +261,7 @@ for k in range(0, 10):
 		counter += 1
 
 	print "Extracted vocabulary from trainingTweets and placed into appropriate lists"
+	print numTermsInV
 	print
 	
 	# loop through the rest of the code 10 times, changing the training and testing data each time
@@ -294,7 +281,7 @@ for k in range(0, 10):
 	
 	preTime = time.time()
 	
-	for t in range(0, len(V)):
+	for t in range(0, lengthV):
 		TCT = 0
 		
 		try:

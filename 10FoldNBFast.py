@@ -54,10 +54,10 @@ startTime = time.time()
 
 #------Extracting from classes and docs from files------
 
-file = open('nsweClassification.txt', 'rt')
-file2 = open('cleanedTrainData.txt', 'rt')
-#file = open('trainlabels.txt', 'rt')
-#file2 = open('cleanedTrainDataNoStopWords.txt', 'rt')
+#file = open('nsweClassification.txt', 'rt')
+#file2 = open('cleanedTrainData.txt', 'rt')
+file = open('trainlabels.txt', 'rt')
+file2 = open('cleanedTrainDataNoStopWords.txt', 'rt')
 #file = open('trainLabelsTest.txt', 'rt')
 #file2 = open('trainDataTest.txt', 'rt')
 
