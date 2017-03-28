@@ -35,12 +35,10 @@ startTime = time.time()
 
 #------Extracting from classes and docs from files------
 
+#This is the classification
 file = open('nsweClassification.txt', 'rt')
+# These are the tweets
 file2 = open('cleanedTrainData.txt', 'rt')
-#file = open('trainlabels.txt', 'rt')
-#file2 = open('cleanedTrainDataNoStopWords.txt', 'rt')
-#file = open('trainLabelsTest.txt', 'rt')
-#file2 = open('trainDataTest.txt', 'rt')
 
 tweetLengths = open("CorrectLengths.txt", "w")
 
@@ -343,10 +341,6 @@ for k in range(0, 10):
 				W[y] = vDict[wordsInTweet[y]]
 			except:
 				continue
-			'''
-			if wordsInTweet[y] in V:
-				W.insert(y, wordsInTweet[y])
-			'''
 		
 		#------For loop to compute conditional probability------
 		score = []
@@ -360,29 +354,8 @@ for k in range(0, 10):
 			score[1] += math.log(condProb[1][W[t]])
 			score[2] += math.log(condProb[2][W[t]])
 			score[3] += math.log(condProb[3][W[t]])
-			
-			
-		'''
-		for c in range(0, 4):
-			score.append(math.log(prior[c]))
-			if c == 0:
-				for t in W:
-					index = findIndexOfCondProb(t)
-					score[c] += math.log(condProb[c][index])
-			elif c == 1:
-				for t in W:
-					index = findIndexOfCondProb(t)
-					score[c] += math.log(condProb[c][index])
-			elif c == 2:
-				for t in W:
-					index = findIndexOfCondProb(t)
-					score[c] += math.log(condProb[c][index])
-			elif c == 3:
-				for t in W:
-					index = findIndexOfCondProb(t)
-					score[c] += math.log(condProb[c][index])
-		'''
-		#------Test to check accuracy------
+
+#------Test to check accuracy-------------------------------------------------------------------------------------------------------------------
 		if score[0] > score[1] and score[0] > score[2] and score[0] > score[3]:
 			if testingLabels[counter] == '0':
 				tweetLengths.write(str(len(testingTweets[counter].split())) + "\n")
@@ -407,6 +380,7 @@ for k in range(0, 10):
 				right += 1
 			else:
 				wrong += 1
+		
 		counter += 1
 
 	print('Accuracy: ' + str((float(right)/(right+wrong))*100) + '%')

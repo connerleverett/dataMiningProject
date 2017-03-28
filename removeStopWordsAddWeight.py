@@ -8,10 +8,10 @@
 import re
 
 # -------------Change input file name here-----------------
-file = open('trainTest.txt', 'rt')
+file = open('cleanedTrainData.txt', 'rt')
 file2 = open('stopwords.txt', 'rt')
 file3 = open('listOfStatesAndCities.txt', 'rt')
-outputFile = open('cleanedTrainDataAddWeight.txt', 'w')
+outputFile = open('addWeight20000.txt', 'w')
 
 D = []
 
@@ -36,16 +36,19 @@ for x in D:
 	x = x.lower()
 	wordsInTweet = re.sub("[^\w']", " ",  x).split()
 	cleanedTweet = ''
+	potentialTweet = ''
 	for num in range(0, len(wordsInTweet)):
 		if (wordsInTweet[num] == 'co'):
 			if (wordsInTweet[num - 1] != 't'):
 				cleanedTweet = cleanedTweet + ' ' + wordsInTweet[num] + ' ' + wordsInTweet[num]
 				num = num + 1
 		elif (wordsInTweet[num] in locationWords):
-			cleanedTweet = cleanedTweet + ' ' + wordsInTweet[num] + ' ' + wordsInTweet[num]
+			potentialTweet = potentialTweet + " " + wordsInTweet[num]
 			num = num + 1
 		elif (wordsInTweet[num] not in stopWords):
 			cleanedTweet = cleanedTweet + ' ' + wordsInTweet[num]
+	if (len(potentialTweet)>0):
+		cleanedTweet = potentialTweet
 	outputFile.write(cleanedTweet + '\n')
 
 outputFile.close()

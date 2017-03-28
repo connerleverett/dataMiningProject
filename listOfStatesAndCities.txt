@@ -102,13 +102,11 @@ GA
 IA
 ID
 IL
-IN
 KS
 KY
 LA
 MA
 MD
-ME
 MI
 MN
 MO
@@ -122,9 +120,6 @@ NJ
 NM
 NV
 NY
-OH
-OK
-OR
 PA
 RI
 SC

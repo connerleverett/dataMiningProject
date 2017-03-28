@@ -6,9 +6,9 @@
 import re
 
 # -------------Change input file name here-----------------
-file = open('trainTest.txt', 'rt')
+file = open('oneThousandTweets.txt', 'rt')
 file2 = open('stopwords.txt', 'rt')
-outputFile = open('cleanedTrainDataNoStopWords.txt', 'w')
+outputFile = open('noStopWords1000.txt', 'w')
 
 D = []
 
