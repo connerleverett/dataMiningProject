@@ -1,0 +1,1 @@
+temperature down 54Â°F -&gt; 44Â°Fhumidity up 40% -&gt; 48%wind 4mph -&gt; 3mph

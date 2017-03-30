@@ -1,0 +1,1 @@
+DSS 25 receiving data from Voyager 1 at 160b/s.IN LOCK OFF 1 MCD2

@@ -1,0 +1,1 @@
+temperature down 39Â°F -&gt; 36Â°Fhumidity down 32% -&gt; 31%wind 10mph -&gt; 16mph

@@ -1,0 +1,1 @@
+temperature down 56Â°F -&gt; 55Â°Fhumidity up 41% -&gt; 58%

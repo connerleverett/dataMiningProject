@@ -1,0 +1,1 @@
+temperature up 42Â°F -&gt; 45Â°Fwind 3mph -&gt; 4mph

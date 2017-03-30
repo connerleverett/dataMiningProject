@@ -1,0 +1,1 @@
+temperature down 87Â°F -&gt; 78Â°Fhumidity up 9% -&gt; 12%wind 9mph -&gt; 5mph

@@ -1,0 +1,1 @@
+clear sky -&gt; misttemperature down 52Â°F -&gt; 41Â°Fhumidity up 81% -&gt; 100%

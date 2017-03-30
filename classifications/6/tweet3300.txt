@@ -1,0 +1,1 @@
+mist -&gt; light raintemperature up 38Â°F -&gt; 40Â°Fhumidity up 93% -&gt; 100%wind 3mph -&gt; 5mph
