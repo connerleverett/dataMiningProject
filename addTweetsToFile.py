@@ -1,8 +1,8 @@
 import os
 import sys
 
-tweetFile = open('tweets48.txt', 'rt')
-classificationFile = open('classification48.txt','rt')
+tweetFile = open('cleanedTrainData48.txt', 'rt')
+classificationFile = open('fixedClassification48.txt','rt')
 
 tweetList = []
 classificationList = []

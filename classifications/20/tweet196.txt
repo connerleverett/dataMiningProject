@@ -1,0 +1,1 @@
+ wind 0 0 mph barometer 29 92 in rising slowly temperature 42 4 f rain today 0 00 in humidity 94
