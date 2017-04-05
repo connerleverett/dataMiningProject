@@ -1,0 +1,1 @@
+ wind 0 0 mph nne barometer 30 102 in rising rapidly temperature 43 3 f rain today 0 22 in humidity 80

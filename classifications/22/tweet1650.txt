@@ -1,1 +1,0 @@
-temperature up 30Â°F -&gt; 33Â°Fhumidity up 38% -&gt; 86%wind 3mph -&gt; 5mph

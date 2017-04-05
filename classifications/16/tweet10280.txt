@@ -1,0 +1,1 @@
+ wind 2 0 mph wnw barometer 30 274 in falling slowly temperature 22 6 f rain today 0 00 in humidity 69

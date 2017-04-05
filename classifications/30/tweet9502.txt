@@ -1,0 +1,1 @@
+ clear sky gt misttemperature down 53 f gt 49 fhumidity up 87 gt 93 wind 3mph gt 5mph

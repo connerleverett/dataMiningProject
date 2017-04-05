@@ -1,1 +1,0 @@
-clear sky -&gt; misttemperature down 53Â°F -&gt; 49Â°Fhumidity up 87% -&gt; 93%wind 3mph -&gt; 5mph

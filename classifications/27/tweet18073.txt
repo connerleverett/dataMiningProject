@@ -1,0 +1,1 @@
+ wind 4 3 mph ese barometer 21 318 in rising very rapidly temperature 81 2 f rain today 0 00in humidity 45

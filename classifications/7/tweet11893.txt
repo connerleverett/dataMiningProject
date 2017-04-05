@@ -1,1 +1,0 @@
-temperature up 26Â°F -&gt; 37Â°Fhumidity down 67% -&gt; 40%wind 7mph -&gt; 10mph

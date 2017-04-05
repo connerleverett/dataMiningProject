@@ -1,0 +1,1 @@
+ wind 0 0 mph sse barometer 29 992 in falling temperature 47 3 f rain today 0 00 in humidity 49

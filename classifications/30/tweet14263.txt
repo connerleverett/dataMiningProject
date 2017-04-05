@@ -1,0 +1,1 @@
+ wind 0 0 mph barometer 30 023 in falling temperature 50 9 f rain today 0 00 in humidity 77

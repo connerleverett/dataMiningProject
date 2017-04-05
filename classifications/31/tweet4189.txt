@@ -1,1 +1,0 @@
-shower rain -&gt; hazetemperature down 53Â°F -&gt; 52Â°Fhumidity up 87% -&gt; 100%wind 10mph -&gt; 5mph

@@ -1,0 +1,1 @@
+ wind 1 4 mph ne barometer 30 253 in rising temperature 64 3 f rain today 0 00 in humidity 57

@@ -1,0 +1,1 @@
+ temperature down 46 f gt 41 fwind 2mph gt 3mph

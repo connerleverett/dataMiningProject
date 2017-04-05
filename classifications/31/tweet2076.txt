@@ -1,1 +1,0 @@
-mist -&gt; fogtemperature up 37Â°F -&gt; 46Â°Fwind 3mph -&gt; 5mph

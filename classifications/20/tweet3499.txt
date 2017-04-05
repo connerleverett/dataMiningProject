@@ -1,0 +1,1 @@
+ mist gt hazetemperature up 40 f gt 44 fhumidity down 100 gt 75 wind 2mph gt 3mph

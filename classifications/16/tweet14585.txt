@@ -1,0 +1,1 @@
+ wind 2 0 mph nnw barometer 30 352 in rising temperature 36 7 f rain today 0 00 in humidity 91

@@ -1,1 +1,0 @@
-at 7:54pm:temperature down 64Â°F -&gt; 62Â°Fhumidity up 55% -&gt; 59%

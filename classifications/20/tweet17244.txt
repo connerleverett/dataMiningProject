@@ -1,0 +1,1 @@
+ wind 2 2 mph ene barometer 29 95 in steady temperature 60 6 f rain today 0 00 in humidity 51

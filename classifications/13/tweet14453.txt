@@ -1,1 +1,0 @@
-snow -&gt; overcast cloudstemperature down 34Â°F -&gt; 33Â°Fhumidity up 86% -&gt; 92%wind 15mph -&gt; 14mph

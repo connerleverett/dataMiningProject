@@ -1,0 +1,1 @@
+ wind 1 9 mph sse barometer 30 246 in rising temperature 64 1 f rain today 0 00in humidity 98

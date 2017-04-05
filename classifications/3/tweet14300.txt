@@ -1,0 +1,1 @@
+ 05 00 01 temp 47 7 f wind chill 47 7 f dew point 36 1 f rain today 0 00 inches wind 0 0 mph from the nw gusting to 2 0

@@ -1,0 +1,1 @@
+ wind 3 2 mph ssw barometer 30 165 in falling slowly temperature 64 7 f rain today 0 00 in humidity 88

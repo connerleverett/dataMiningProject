@@ -1,0 +1,1 @@
+ tmp 64 8f wd 0 0 s gst 12 0 bar 30 053 rising wd chl 64 8f prec 0 00

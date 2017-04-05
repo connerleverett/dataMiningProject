@@ -1,0 +1,1 @@
+ temp 31 4 hi lo 31 4 31 1 rng 0 3 wc 31 4 hmd 76 rain 0 00 storm 0 27 bar 30 285 falling dp 24 7 wnd 1mph dir ese gst 8mph snw 0

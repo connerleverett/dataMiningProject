@@ -1,0 +1,1 @@
+ wind 0 0 mph barometer 30 13 in rising slowly temperature 64 8 f rain today 0 00 in humidity 75

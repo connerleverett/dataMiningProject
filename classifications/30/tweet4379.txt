@@ -1,0 +1,1 @@
+ wind 0 0 mph ssw barometer 29 908 in rising rapidly temperature 37 7 f rain today 0 22 in humidity 93

@@ -1,0 +1,1 @@
+ temperature down 42 f gt 40 fwind 14mph gt 11mph

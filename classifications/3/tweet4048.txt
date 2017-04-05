@@ -1,1 +1,0 @@
-fog -&gt; misttemperature down 46Â°F -&gt; 41Â°Fhumidity up 93% -&gt; 100%wind 5mph -&gt; 3mph

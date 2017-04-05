@@ -1,0 +1,1 @@
+ clear sky gt scattered cloudstemperature up 24 f gt 28 fhumidity down 92 gt 72 wind 5mph gt 7mph

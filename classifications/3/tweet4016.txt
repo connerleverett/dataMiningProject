@@ -1,0 +1,1 @@
+ 05 00 02 temp 43 4 f heat index 43 4 f dew point 39 8 f rain today 0 00 inches wind 0 0 mph from the wnw gusting to 0 0

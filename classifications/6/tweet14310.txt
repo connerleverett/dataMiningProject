@@ -1,0 +1,1 @@
+ light rain gt snowtemperature down 40 f gt 35 fhumidity up 93 gt 100 wind 6mph gt 3mph

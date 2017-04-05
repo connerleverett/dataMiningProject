@@ -1,0 +1,1 @@
+ mist gt overcast cloudstemperature down 49 f gt 48 fhumidity down 100 gt 93 wind 10mph gt 9mph

@@ -1,0 +1,1 @@
+ temp 35 6 f dew point 29 2 wind w 12 3 mph gust 21 5 rain today 0 00in pressure 29 99in trend rising slowly

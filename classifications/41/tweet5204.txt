@@ -1,0 +1,1 @@
+ on wb sr 500 near thurston way at mp 4

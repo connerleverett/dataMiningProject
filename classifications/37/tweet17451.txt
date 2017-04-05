@@ -1,0 +1,1 @@
+ temperature up 44 f gt 68 fhumidity down 48 gt 23 wind 4mph gt 7mph

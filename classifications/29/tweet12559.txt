@@ -1,0 +1,1 @@
+ temp 36 7 f dew point 32 6 wind wnw 13 3 mph gust 22 8 rain today 0 00in pressure 29 97in trend steady

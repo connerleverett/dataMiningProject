@@ -1,0 +1,1 @@
+ wind 0 0 mph ne barometer 30 297 in steady temperature 48 4 f rain today 0 00in humidity 90

@@ -1,0 +1,1 @@
+ temp 50 8 f dew point 35 2 wind sse 12 0 mph gust 25 9 rain today 0 00in pressure 30 29in trend falling

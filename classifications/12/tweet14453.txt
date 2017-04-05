@@ -1,0 +1,1 @@
+ snow gt overcast cloudstemperature down 34 f gt 33 fhumidity up 86 gt 92 wind 15mph gt 14mph

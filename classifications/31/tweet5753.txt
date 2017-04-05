@@ -1,1 +1,0 @@
-temperature up 69Â°F -&gt; 70Â°Fhumidity down 60% -&gt; 49%

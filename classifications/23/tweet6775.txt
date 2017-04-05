@@ -1,0 +1,1 @@
+ wind 0 0 mph wnw barometer 30 517 in steady temperature 32 2 f rain today 0 00 in humidity 50

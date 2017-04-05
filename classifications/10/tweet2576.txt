@@ -1,1 +1,0 @@
-temperature down 35Â°F -&gt; 33Â°Fhumidity up 59% -&gt; 69%wind 13mph -&gt; 3mph

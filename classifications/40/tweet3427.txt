@@ -1,0 +1,1 @@
+ temp 44 0 f lo temp 38 5 wind 13 6mph maxgust 28 2 05 07 windchill 37 4 pressure 29 82in falling slowly

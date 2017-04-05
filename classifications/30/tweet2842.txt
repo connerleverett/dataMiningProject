@@ -1,0 +1,1 @@
+ mag 2 depth 8 km utc 6 45 am central california emsc info fdixl3uhi2

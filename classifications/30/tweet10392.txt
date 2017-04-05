@@ -1,0 +1,1 @@
+ dss 25 receiving data from voyager 1 at 160b s in lock off 1 mcd2

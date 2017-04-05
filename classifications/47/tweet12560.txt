@@ -1,0 +1,1 @@
+ 01 00 solar 0 uv 0 0 et 0 003 cloudbase 7007ft density 1 210 moon waning 74 full owo9eqfarj apache junction az weather

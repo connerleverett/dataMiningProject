@@ -1,0 +1,1 @@
+ 17 50 temp 21 4 f hum 34 dewp 1 1 f bar 1020 8 hpa rain today 0 inch wind 286 5 0 km h

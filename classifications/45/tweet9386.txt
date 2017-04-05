@@ -1,0 +1,1 @@
+ tmp 30 2f wd 0 0 ene gst 0 0 bar 30 366 rising wd chl 30 2f prec 0 00

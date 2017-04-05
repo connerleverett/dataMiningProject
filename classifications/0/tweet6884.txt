@@ -1,0 +1,1 @@
+ 03 12 07 00 temp 22 1f wc 22 1f wind 0 4mph wsw gust 3 0mph bar 30 377in rising slowly rain 0 00in hum 62 uv 0 0 solarrad 0

@@ -1,0 +1,1 @@
+ wind 0 0 mph n barometer 30 248 in rising very rapidly temperature 63 6 f rain today 0 00in humidity 95

@@ -1,0 +1,1 @@
+ wind 0 0 mph barometer 30 187 in rising temperature 37 8 f rain today 0 01 in humidity 91

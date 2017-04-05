@@ -1,0 +1,1 @@
+ wind 0 3 mph s barometer 30 199 in falling temperature 21 3 f rain today 0 00 in humidity 72

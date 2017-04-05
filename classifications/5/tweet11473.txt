@@ -1,0 +1,1 @@
+ temp 23 5 hi lo 27 1 23 3 rng 3 8 wc 23 5 hmd 68 rain 0 00 storm 0 04 bar 30 114 rising dp 14 5 wnd 0mph dir gst 9mph snw 0

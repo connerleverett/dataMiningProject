@@ -1,0 +1,1 @@
+ 05 30 01 temp 27 5 f wind chill 27 5 f dew point 23 3 f rain today 0 00 inches wind 0 0 mph from the w gusting to 0 0

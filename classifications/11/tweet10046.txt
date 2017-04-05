@@ -1,0 +1,1 @@
+ temperature down 36 f gt 33 fhumidity up 26 gt 34 wind 8mph gt 10mph

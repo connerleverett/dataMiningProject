@@ -1,0 +1,1 @@
+ 16 28 temp 29 5 f hum 92 dewp 26 6 f bar 738 8 mmhg rain today 0 inch wind 242 1 1 kn

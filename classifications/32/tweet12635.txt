@@ -1,0 +1,1 @@
+ wind 0 0 mph barometer 29 65 in rising very rapidly temperature 47 5 f rain today 0 50 in humidity 100

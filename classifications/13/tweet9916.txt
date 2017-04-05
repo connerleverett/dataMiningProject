@@ -1,0 +1,1 @@
+ wind 2 8 mph nnw barometer 29 502 in falling rapidly temperature 19 7 f rain today 0 00 in humidity 94

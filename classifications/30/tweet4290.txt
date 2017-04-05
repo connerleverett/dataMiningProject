@@ -1,0 +1,1 @@
+ mist gt light raintemperature down 52 f gt 51 fhumidity up 62 gt 81 wind 3mph gt 15mph

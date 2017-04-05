@@ -1,0 +1,1 @@
+ why does windows 7 try c hecking for a solution to the problem when you're writing your own application it's just wasted time

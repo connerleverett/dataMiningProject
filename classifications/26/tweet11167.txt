@@ -1,0 +1,1 @@
+ temperature down 55 f gt 46 fhumidity up 46 gt 81

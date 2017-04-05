@@ -1,0 +1,1 @@
+ haze gt snowtemperature down 22 f gt 18 fhumidity down 85 gt 72 wind 15mph gt 10mph

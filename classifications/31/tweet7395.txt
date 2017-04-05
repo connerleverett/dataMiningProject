@@ -1,1 +1,0 @@
-temperature up 50Â°F -&gt; 53Â°Fhumidity down 93% -&gt; 81%

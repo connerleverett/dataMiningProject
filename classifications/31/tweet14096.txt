@@ -1,1 +1,0 @@
-DSS 24 receiving data from Chandra at 1.2Mb/s.IN LOCK OFF 1 MCD2

@@ -1,0 +1,1 @@
+ temperature down 75 f gt 63 fhumidity up 22 gt 49 wind 13mph gt 0mph

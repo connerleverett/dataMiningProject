@@ -1,1 +1,0 @@
-clear sky -&gt; hazetemperature down 70Â°F -&gt; 62Â°Fhumidity up 36% -&gt; 87%wind 6mph -&gt; 1mph

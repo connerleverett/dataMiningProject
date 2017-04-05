@@ -1,1 +1,0 @@
-mist -&gt; overcast cloudstemperature down 31Â°F -&gt; 28Â°Fhumidity up 91% -&gt; 92%wind 8mph -&gt; 14mph

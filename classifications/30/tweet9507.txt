@@ -1,0 +1,1 @@
+ mag 2 1 depth 2 km utc 1 48 pm northern california emsc info fjnilkmftx

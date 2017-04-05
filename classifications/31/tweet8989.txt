@@ -1,1 +1,0 @@
-haze -&gt; fogtemperature down 69Â°F -&gt; 63Â°Fhumidity up 87% -&gt; 100%

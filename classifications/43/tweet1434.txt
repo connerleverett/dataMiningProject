@@ -1,1 +1,0 @@
-clear sky -&gt; misttemperature down 44Â°F -&gt; 32Â°Fhumidity up 70% -&gt; 75%

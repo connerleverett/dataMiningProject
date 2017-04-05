@@ -1,0 +1,1 @@
+ wind 0 0 mph barometer 30 138 in rising temperature 52 4 f rain today 0 00 in humidity 75

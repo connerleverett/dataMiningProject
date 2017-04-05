@@ -1,0 +1,1 @@
+ wind 0 0 mph barometer 30 407 in falling slowly temperature 17 3 f rain today 0 00 in humidity 86

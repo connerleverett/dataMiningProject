@@ -1,0 +1,1 @@
+ wind 0 0 mph n barometer 30 179 in rising temperature 62 6 f rain today 0 00in humidity 97

@@ -1,0 +1,1 @@
+ wind 2 0 mph ne barometer 30 413 in falling slowly temperature 44 3 f rain today 0 00 in humidity 70

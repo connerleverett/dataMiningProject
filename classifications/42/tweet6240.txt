@@ -1,1 +1,0 @@
-Why does #Windows 7 try "[c]hecking for a solution to the problem" when you're writing your own application?  It's just wasted time!

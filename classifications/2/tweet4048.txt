@@ -1,0 +1,1 @@
+ fog gt misttemperature down 46 f gt 41 fhumidity up 93 gt 100 wind 5mph gt 3mph

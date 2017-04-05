@@ -1,0 +1,1 @@
+ wind 1 0 mph se barometer 30 213 in steady temperature 41 3 f rain today 0 00 in humidity 64

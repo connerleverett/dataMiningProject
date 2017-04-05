@@ -1,1 +1,0 @@
-clear sky -&gt; overcast cloudstemperature up 30Â°F -&gt; 34Â°Fhumidity down 42% -&gt; 31%wind 9mph -&gt; 10mph

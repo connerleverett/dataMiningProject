@@ -1,1 +1,0 @@
-temperature down 42Â°F -&gt; 40Â°Fwind 14mph -&gt; 11mph

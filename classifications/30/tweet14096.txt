@@ -1,0 +1,1 @@
+ dss 24 receiving data from chandra at 1 2mb s in lock off 1 mcd2

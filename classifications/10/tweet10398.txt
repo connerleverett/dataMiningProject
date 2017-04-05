@@ -1,0 +1,1 @@
+ wind 4 0 mph wnw barometer 29 93 in rising slowly temperature 17 4 f rain today 0 00 in humidity 51

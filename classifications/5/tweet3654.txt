@@ -1,0 +1,1 @@
+ temp 40 6 hi lo 42 1 36 0 rng 6 1 wc 40 6 hmd 97 rain 0 12 storm 0 20 bar 30 203 falling dp 39 8 wnd 0mph dir gst 4mph snw 0

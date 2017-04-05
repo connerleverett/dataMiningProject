@@ -1,0 +1,1 @@
+ wind 3 0 mph wsw barometer 29 958 in falling slowly temperature 38 7 f rain today 0 00in humidity 80

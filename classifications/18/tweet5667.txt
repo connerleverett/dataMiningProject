@@ -1,0 +1,1 @@
+ clear sky gt overcast cloudstemperature up 30 f gt 34 fhumidity down 42 gt 31 wind 9mph gt 10mph

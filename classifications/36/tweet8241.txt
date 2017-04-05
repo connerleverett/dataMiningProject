@@ -1,1 +1,0 @@
-at 1:35pm:temperature up 76Â°F -&gt; 79Â°Fhumidity down 22% -&gt; 14%wind 5mph -&gt; 11mph

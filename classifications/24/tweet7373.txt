@@ -1,0 +1,1 @@
+ 3 12 2017 11 00temp 42 0f hum 64 wind 7 0 mphbaro 30 423in amp fallingrain 0 00 in atixgk3mtv

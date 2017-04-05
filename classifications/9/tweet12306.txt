@@ -1,0 +1,1 @@
+ temp 41 4 f wind chill 41 4 f rh 95 wind 0 0 gust 0 0 slp 30 226 in rising slowly rain 0 59 in solar 0 uv 0 0 vawx swvawx wvwx

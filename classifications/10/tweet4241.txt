@@ -1,0 +1,1 @@
+ wind 1 3 mph sw barometer 30 09 in steady temperature 33 6 f rain today 0 00 in humidity 99

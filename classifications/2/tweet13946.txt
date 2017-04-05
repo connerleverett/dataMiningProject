@@ -1,0 +1,1 @@
+ wind 5 0 mph ene barometer 30 150 in rising slowly temperature 38 1 f rain today 0 06in humidity 93

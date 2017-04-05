@@ -1,0 +1,1 @@
+ wind 0 2 mph se barometer 30 001 in falling slowly temperature 63 5 f rain today 0 00in humidity 92

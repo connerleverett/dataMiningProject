@@ -1,0 +1,1 @@
+ wind 0 0 mph wnw barometer 30 305 in rising slowly temperature 48 8 f rain today 0 00in humidity 94

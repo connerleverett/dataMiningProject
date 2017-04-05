@@ -1,1 +1,0 @@
-mist -&gt; hazetemperature up 40Â°F -&gt; 44Â°Fhumidity down 100% -&gt; 75%wind 2mph -&gt; 3mph

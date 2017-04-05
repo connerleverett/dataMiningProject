@@ -1,0 +1,1 @@
+ temp 19 4 f wind chill 19 4 f rh 80 wind 0 0 gust 0 0 slp 30 430 in rising slowly rain 0 00 in solar 0 uv 0 0 vawx swvawx wvwx

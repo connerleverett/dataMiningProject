@@ -1,1 +1,0 @@
-temperature down 75Â°F -&gt; 63Â°Fhumidity up 22% -&gt; 49%wind 13mph -&gt; 0mph

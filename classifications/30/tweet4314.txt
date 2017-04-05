@@ -1,0 +1,1 @@
+ mist gt clear skytemperature up 38 f gt 49 fhumidity down 100 gt 87 wind 0mph gt 1mph

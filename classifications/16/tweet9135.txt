@@ -1,0 +1,1 @@
+ mist gt overcast cloudstemperature down 31 f gt 28 fhumidity up 91 gt 92 wind 8mph gt 14mph

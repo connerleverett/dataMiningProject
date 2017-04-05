@@ -1,1 +1,0 @@
-temperature up 31Â°F -&gt; 34Â°Fwind 3mph -&gt; 5mph

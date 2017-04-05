@@ -1,1 +1,0 @@
-mist -&gt; overcast cloudstemperature down 49Â°F -&gt; 48Â°Fhumidity down 100% -&gt; 93%wind 10mph -&gt; 9mph

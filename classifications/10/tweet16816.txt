@@ -1,0 +1,1 @@
+ temperature down 36 f gt 33 fhumidity down 100 gt 47

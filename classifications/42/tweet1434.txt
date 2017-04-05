@@ -1,0 +1,1 @@
+ clear sky gt misttemperature down 44 f gt 32 fhumidity up 70 gt 75
